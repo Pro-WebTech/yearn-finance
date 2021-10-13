@@ -1,0 +1,112 @@
+.vaultContainer {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 223px;
+}
+
+.vaultContainerActive {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.7) 0%, rgba(47,128,237,0.7) 48%) rgba(63,94,251,0.7) 100%;
+  min-height: 223px;
+}
+
+.vaultTitle {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.vaultLogo {
+  width: 50;
+  height: 50;
+  border-radius: 25px;
+  margin-right: 12px;
+}
+
+.vaultName {
+  flex: 1;
+}
+
+.vaultInfo {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.vaultInfoField {
+  padding-right: 10px;
+}
+
+.vaultInfoFieldSlim {
+  width: 35%;
+}
+
+.vaultVersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(25, 101, 233, 1);
+}
+
+.vaultV1VersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(229, 107, 115, 1);
+}
+
+.vaultV2VersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(25, 101, 233, 1);
+}
+
+.vaultExpVersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(255, 179, 71, 1);
+}
+
+.vaultEarnVersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(220, 107, 229, 1);
+}
+
+.vaultLockupVersionContainer {
+  border-radius: 4px;
+  padding: 5px 16px;
+  background: rgba(244,220,10, 1);
+}
+
+.vaultVersionText {
+  font-size: 0.5rem;
+  color: #fff;
+}
+
+.fontWeightBold {
+  font-weight: bold !important;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .vaultContainer {
+    min-height: 0;
+  }
+
+  .vaultContainerActive {
+    min-height: 0;
+  }
+}

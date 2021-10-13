@@ -1,0 +1,229 @@
+.vaultContainer {
+  height: 100%;
+  padding: 0px 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vaultStatsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.vaultBalanceContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 48px;
+  cursor: pointer;
+}
+
+.vaultOutline {
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.vaultLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vaultInfo {
+  display: flex;
+  margin-top: 48px;
+}
+
+.vaultTitle {
+  min-width: 100px;
+}
+
+.vaultGrowthContainer {
+  display: flex;
+  align-items: center;
+}
+
+.growthOutline {
+  border: 1px solid #212529;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.growthIcon {
+  font-size: 1.6rem !important;
+}
+
+.vaultTransactionsContainer {
+  width: 100%;
+  margin-top: 48px;
+}
+
+.cardSeparation {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaultVersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(25, 101, 233, 1);
+  color: rgba(25, 101, 233, 1);
+}
+
+.vaultV1VersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(229, 107, 115, 1);
+  color: rgba(229, 107, 115, 1);
+}
+
+.vaultV2VersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(25, 101, 233, 1);
+  color: rgba(25, 101, 233, 1);
+}
+
+.vaultExpVersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(255, 179, 71, 1);
+  color: rgba(255, 179, 71, 1);
+}
+
+.vaultEarnVersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(220, 107, 229, 1);
+  color: rgba(220, 107, 229, 1);
+}
+
+.vaultLockupVersionContainer {
+  width: fit-content;
+  border-radius: 12px;
+  padding: 3px 12px;
+  border: 1px solid rgba(244, 220, 10, 0.8);
+  color: rgba(244, 220, 10, 0.8);
+}
+
+.vaultVersionText {
+  font-size: 0.5rem;
+}
+
+.vaultIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.borderedSection {
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  padding: 24px;
+  padding-bottom: 0px;
+  flex: 1;
+}
+
+.overviewContainer {
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+}
+
+.separator {
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  height: 100px;
+  margin-right: 48px;
+  margin-left: 48px;
+}
+
+.overviewCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  .overviewContainer {
+    padding: 24px 24px;
+  }
+  .separator {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .vaultInfo {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .vaultContainer {
+    padding: 0px 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vaultInfo {
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .borderedSection {
+    min-width: 600px;
+  }
+  .overviewContainer {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .separator {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    width: calc(100%);
+    margin: 12px 0px 12px 0px;
+    height: 0px;
+  }
+  .overviewCard {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .vaultContainer {
+    padding: 0px 12px;
+  }
+  .vaultBalanceContainer {
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .vaultOutline {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    margin-right: 12px;
+  }
+  .vaultInfo {
+    max-width: 100vw;
+    flex-direction: column-reverse;
+  }
+  .vaultTransactionsContainer {
+    margin-top: 12px;
+  }
+}

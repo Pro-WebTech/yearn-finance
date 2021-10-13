@@ -1,0 +1,175 @@
+.statsTVLContainer {
+  padding: 0px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tvlCardContainer {
+  width: 420px;
+  border-radius: 10px;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsTable {
+  width: 100%;
+  cursor: pointer;
+}
+
+.statsFilters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0px 24px 0px;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.statsTableRow {
+  cursor: pointer;
+}
+
+.statsTable {
+  width: 100%;
+  cursor: pointer;
+}
+
+.vaultTitleCell {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 6px;
+}
+
+.statsContainer {
+  padding: 48px;
+}
+
+.txRow {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.32);
+  display: flex;
+  align-items: center;
+}
+
+.txCellDescription {
+  padding: 22px 0px;
+  flex: 2;
+  cursor: pointer;
+}
+
+.txCellAddress {
+  padding: 22px 0px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.txCell {
+  padding: 22px 0px;
+  flex: 1;
+}
+
+.strategy {
+  padding: 6px 0px;
+}
+
+.descriptionCell {
+  display: flex;
+  align-items: center;
+}
+
+.vaultLogo {
+  margin-right: 12px;
+}
+
+.fontWeightBold {
+  font-weight: bold !important;
+}
+
+.overviewContainer {
+  padding: 32px 48px;
+  margin: 0px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+}
+
+.separator {
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  height: 100px;
+  margin-right: 48px;
+  margin-left: 48px;
+}
+
+.overviewCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+@media screen and (max-width: 1600px) {
+  .overviewContainer {
+    margin: 0px 24px;
+    padding: 24px 24px;
+  }
+  .separator {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .statsContainer {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .overviewContainer {
+    margin: 0px 12px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .separator {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    width: calc(100%);
+    margin: 12px 0px 12px 0px;
+    height: 0px;
+  }
+  .overviewCard {
+    padding-bottom: 12px;
+  }
+  .statsContainer {
+    padding: 12px;
+  }
+  .statsTVLContainer {
+    padding: 12px;
+  }
+  .tvlCardContainer {
+    width: 100%;
+    padding: 24px 24px;
+    margin-bottom: 12px;
+  }
+  .txCellAddress {
+    display: none;
+  }
+  .subTitle {
+    display: none;
+  }
+}

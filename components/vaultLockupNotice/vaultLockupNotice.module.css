@@ -1,0 +1,75 @@
+.noticeContainer {
+  display: flex;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.textContainer {
+  flex: 1;
+  padding: 12px;
+}
+
+.warning {
+  color: #FF9029 !important;
+  margin-bottom: 12px !important;
+}
+
+.warningIcon {
+  color: #FF9029;
+  margin-right: 12px;
+  margin-top: 12px;
+  font-size: 32px !important;
+}
+
+.paragraph {
+  margin-bottom: 12px !important;
+}
+
+.vaultInfoField {
+  padding: 6px 0px;
+}
+
+.claimActionContainer {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.actionButton {
+  margin-top: 24px;
+}
+
+.warningMobile {
+  display: none !important;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .claimActionContainer {
+    width: calc(100vw - 24px);
+    padding: 12px;
+  }
+  .actionButton {
+    margin-top: 12px;
+  }
+  .warningIcon {
+    display: none !important;
+  }
+  .warningMobile {
+    color: #FF9029;
+    margin-right: 12px;
+    font-size: 32px !important;
+  }
+  .textContainer {
+    padding: 0px;
+  }
+  .warning {
+    margin-bottom: 0px !important;
+  }
+}

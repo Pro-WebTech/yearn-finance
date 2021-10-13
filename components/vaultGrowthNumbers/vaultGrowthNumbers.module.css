@@ -1,0 +1,59 @@
+.extraContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vaultGrowthContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  padding-bottom: 24px;
+}
+
+.portfolioGrowthContainer {
+  display: flex;
+  align-items: center;
+  padding: 6px 0px;
+  flex: 1;
+}
+
+.growthOutline {
+  border: 1px solid #212529;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.growthIcon {
+  font-size: 1.6rem !important;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .extraContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 12px;
+    min-width: 0px;
+  }
+  .vaultGrowthContainer {
+    max-width: calc(100vw - 24px);
+    min-width: auto;
+    flex-direction: column;
+  }
+  .portfolioGrowthContainer {
+    margin-bottom: 12px;
+  }
+}

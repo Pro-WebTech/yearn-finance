@@ -1,0 +1,406 @@
+.investTable {
+  width: 100%;
+  cursor: pointer;
+}
+
+.investContainer {
+  height: 100%;
+  padding: 0px 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioStatsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolioBalanceContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.portfolioBalanceCombined {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 48px 0px;
+  margin: 0 auto;
+}
+
+.portfolioOutline {
+  border: 1px solid #212529;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.portfolioIcon {
+  font-size: 2.4rem !important;
+}
+
+.portfolioGrowthContainer {
+  display: flex;
+  align-items: center;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.growthOutline {
+  border: 1px solid #212529;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 34px;
+}
+
+.growthIcon {
+  font-size: 2rem !important;
+}
+
+.vaultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+.searchContainer {
+  flex: 1;
+  min-width: 300px !important;
+  margin-left: 48px !important;
+  margin-right: 48px !important;
+}
+
+.vaultSectionTitle {
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.vaultTypeButtons {
+  width: 400px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.vaultTypeButton {
+  border: 0px !important;
+  padding: 5px 12px !important;
+  border-radius: 10px !important;
+  margin: 0px 6px !important;
+  line-height: 1.167 !important;
+  text-transform: none !important;
+}
+
+.v1 {
+  border: 1px solid rgba(229, 107, 115, 1) !important;
+  color: rgba(229, 107, 115, 1) !important;
+}
+
+.v2 {
+  border: 1px solid rgba(25, 101, 233, 1) !important;
+  color: rgba(25, 101, 233, 1) !important;
+}
+
+.exp {
+  border: 1px solid rgba(255, 179, 71, 1) !important;
+  color: rgba(255, 179, 71, 1) !important;
+}
+
+.earn {
+  border: 1px solid rgba(220, 107, 229, 1) !important;
+  color: rgba(220, 107, 229, 1) !important;
+}
+
+.active {
+  border: 1px solid rgba(63, 94, 251, 1) !important;
+  color: rgba(63, 94, 251, 1) !important;
+}
+
+.lockup {
+  border: 1px solid rgba(244, 220, 10, 1) !important;
+  color: rgba(244, 220, 10, 1) !important;
+}
+
+.stableCoins,
+.ethbtc,
+.others {
+  border: 1px solid rgba(221, 82, 2, 0.911) !important;
+  color: rgba(221, 82, 2, 0.911) !important;
+}
+
+.v1Selected {
+  background: rgba(229, 107, 115, 1) !important;
+  color: #fff !important;
+}
+
+.v2Selected {
+  background: rgba(25, 101, 233, 1) !important;
+  color: #fff !important;
+}
+
+.expSelected {
+  background: rgba(255, 179, 71, 1) !important;
+  color: #fff !important;
+}
+
+.earnSelected {
+  background: rgba(220, 107, 229, 1) !important;
+  color: #fff !important;
+}
+
+.activeSelected {
+  background: radial-gradient(circle, rgba(63, 94, 251, 0.7) 0%, rgba(47, 128, 237, 0.7) 48%) rgba(63, 94, 251, 0.7) 100% !important;
+  color: #fff !important;
+}
+
+.lockupSelected {
+  background: rgba(244, 220, 10, 0.8) !important;
+  color: #22252e !important;
+}
+
+.stableCoinsSelected,
+.ethBTCSelected,
+.othersSelected {
+  background: rgba(221, 82, 2, 0.911) !important;
+  color: #fff !important;
+}
+
+.vaultFilters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0px 24px 0px;
+}
+
+.type {
+  border: 1px solid rgba(125, 125, 125, 1) !important;
+  color: rgba(125, 125, 125, 1) !important;
+}
+
+.typeSelected {
+  background: rgba(125, 125, 125, 1) !important;
+  color: #fff !important;
+}
+
+.layoutToggleButton {
+  max-width: 50px;
+  padding: 16px !important;
+}
+
+.layoutToggleButtons {
+  width: 112px;
+}
+
+.vaultsTable {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+}
+
+.vaultRow {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  flex: 1;
+}
+
+.vaultTitleCell {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 6px;
+}
+
+.vaultVersionCell {
+  flex: 1;
+  padding: 12px 6px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.vaultBalanceCell {
+  flex: 1;
+  padding: 12px 6px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vaultAvailableBalanceCell {
+  flex: 1;
+  padding: 12px 6px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overviewContainer {
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+}
+
+.overviewTopPerformersContainer {
+  margin-top: 20px;
+}
+
+.separator {
+  border-right: 1px solid rgba(128, 128, 128, 0.25);
+  height: 100px;
+  margin-right: 48px;
+  margin-left: 48px;
+}
+
+.overviewCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.headAmount {
+}
+
+.tooltipContainer {
+  min-width: 200px;
+}
+
+.tooltipValue {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.val {
+  flex: 1;
+}
+
+.valBold {
+  flex: 1;
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .investContainer {
+    padding: 0px 24px;
+  }
+  .overviewContainer {
+    padding: 24px 24px;
+  }
+  .separator {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .portfolioOutline {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .investContainer {
+    padding: 24px;
+  }
+  .portfolioBalanceCombined {
+    max-height: 150px;
+    padding: 0px;
+    margin: 0;
+  }
+  .vaultTypeButton {
+    margin: 0px 3px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .overviewContainer {
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .separator {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    width: calc(100%);
+    margin: 12px 0px 12px 0px;
+    height: 0px;
+  }
+  .overviewCard {
+    padding-bottom: 12px;
+  }
+  .searchContainer {
+    margin-left: 0px !important;
+  }
+  .spllitContainer {
+    display: none;
+  }
+  .investContainer {
+    padding: 12px;
+  }
+  .portfolioBalanceCombined {
+    padding: 0px;
+  }
+  .portfolioBalanceContainer {
+    margin-bottom: 12px;
+  }
+  .spllitContainer {
+    display: none;
+  }
+  .vaultTypeButtons {
+    width: 100%;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .vaultTypeButton {
+    margin: 0px !important;
+    padding: 5px 6px !important;
+  }
+  .searchContainer {
+    min-width: calc(100vw - 24px) !important;
+    margin-left: 0px;
+    margin-right: 0px !important;
+  }
+  .layoutToggleButtons {
+    margin-top: 12px;
+  }
+  .vaultVersionCell {
+    display: none;
+  }
+  .vaultAvailableBalanceCell {
+    display: none;
+  }
+}
+
+.topVaultPerformersLink {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}

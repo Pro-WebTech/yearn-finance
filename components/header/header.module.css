@@ -1,0 +1,74 @@
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 48px;
+  min-height: 120px;
+}
+
+.accountButton {
+  display: flex;
+  align-items: center;
+  margin-left: 24px !important;
+  min-height: 40px;
+}
+
+.accountIcon {
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  margin-right: 12px;
+}
+
+.metamask {
+  background-image: url('/connectors/icn-metamask.svg');
+}
+.ledger {
+  background-image: url('/connectors/icn-ledger.svg');
+}
+.coinbase {
+  background-image: url('/connectors/coinbaseWalletIcon.svg');
+}
+.torus {
+  background-image: url('/connectors/torus.jpg');
+}
+.trust {
+  background-image: url('/connectors/trustWallet.png');
+}
+
+.themeSelectContainer {
+
+}
+
+.switchIcon {
+  font-size: 1.5rem !important;
+  margin-top: 0.2rem;
+}
+
+.backButton {
+  flex: 1;
+}
+
+.chainInvalidError {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 24px;
+  padding: 36px;
+  min-width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.32);
+  background: #dc3545;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+}

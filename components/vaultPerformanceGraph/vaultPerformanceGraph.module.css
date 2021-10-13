@@ -1,0 +1,57 @@
+.vaultPerformanceGraph {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 360px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.tooltipContainer {
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltipInfo {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.tooltipIcon {
+  margin-right: 12px;
+}
+
+.vaultDataToggle {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orangeDot {
+  border: 5px solid #FF9029;
+  border-radius: 10px;
+}
+
+.blueDot {
+  border: 5px solid #2F80ED;
+  border-radius: 10px;
+}
+
+.durationToggle {
+  width: 220px;
+}
+
+@media screen and (max-width: 576px) {
+  .vaultPerformanceGraph {
+    max-width: auto;
+    min-width: auto;
+    width: calc(100vw - 24px);
+  }
+}
